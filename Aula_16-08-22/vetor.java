@@ -43,3 +43,42 @@ public class Main {
        
     }
 }
+
+// Ordem inversa
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int vetA[]= new int[5];
+        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        System.out.printf("Entrada de Dados \n");
+        while(i<vetA.length){
+            vetA[i++] = sc.nextInt(); 
+        }
+        System.out.printf("Saida de Dados \n");
+        for(i= vetA.length - 1; i >= 0; i--){
+             System.out.printf("%d\n", vetA[i]);
+        }
+       
+    }
+}
+
+// Mostrando somente os pares
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        int vetA[]= new int[5];
+        Scanner sc = new Scanner(System.in);
+        int i = 0;
+        System.out.printf("Entrada de Dados \n");
+        while(i<vetA.length){
+            vetA[i++] = sc.nextInt(); 
+        }
+        System.out.printf("Saida de Dados \n");
+        for(i = 0; i < vetA.length; i++){
+            if(vetA[i] % 2 == 0){
+                System.out.printf("Esse par: %d\n", vetA[i]);
+            }
+        }
+    }
+}
