@@ -4,7 +4,7 @@
 </h1>
 
 <p>
-  <br>Armazenamento das atividades de Estrutura De Dados, ministrada pela professora Andrea. <br>
+  <br>Armazenamento das atividades de Estrutura De Dados, ministrada pela professora Andrea Zotovici. <br>
    Curso de Desenvolvimento de Software Multiplataforma da Fatec Diadema — Luigi Papaiz.
 </p>
 
