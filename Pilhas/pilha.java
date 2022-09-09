@@ -43,13 +43,18 @@ public class Main{
         Pilha pl =  new Pilha(3);
 
         // entrada de dados
-        for(int i = 0; i < dados.length; i++){
-            int num = sc.nextInt();
-            if(pl.cheia()){
-                System.out.println("ERRO! Pilha Cheia.");
-            } else{
-                pl.empilha(num);
-            }
-        }
+        pl.empilha(5);
+        pl.empilha(18);
+        pl.empilha(4);
+        pl.desempilha();
+        pl.desempilha();
+        // for(int i = 0; i < dados.length; i++){
+        //     int num = sc.nextInt();
+        //     if(pl.cheia()){
+        //         System.out.println("ERRO! Pilha Cheia.");
+        //     } else{
+        //         pl.empilha(num);
+        //     }
+        // }
     }
 }
