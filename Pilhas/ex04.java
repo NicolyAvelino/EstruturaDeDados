@@ -4,3 +4,15 @@
 // pilha[1..50]: caractere;
 // i, topo : inteiro;
 // palavra: string; 
+public class Pilha{
+    int i, topo;
+    String palavra;
+}
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Scanner sc = new Scanner(System.in);
+
+        char pilha[30];
+    }
+}

@@ -4,7 +4,7 @@ public class Pilha{
 
     public Pilha(int capMax){
         dados = new int[capMax];
-        topo = 0;
+        topo = -1;
     }
 
     public boolean cheia(){
@@ -16,38 +16,44 @@ public class Pilha{
     }
     public void empilha(int e){
         if(cheia()){
-            return false;
+            System.out.println("Lista cheia!");
         } else {
+            topo = topo + 1;
             dados[topo] = e;
-            topo++;
-            return true;
         }
     }
     public int desempilha(){
         if(vazia()){
-            return null;
+            System.out.println("Lista vazia!");
         } else{
             topo--;
             return dados[topo];
         }
 
     }
-    public void to String(){
+    // public void to String(){
 
-    }
+    // }
 }
 import java.util.Scanner;
 public class Main{
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
-        Pilha pl =  new Pilha(3);
+        Pilha pl =  new Pilha(5);
 
         // entrada de dados
+        pl.empilha(10);
         pl.empilha(5);
-        pl.empilha(18);
+        pl.empilha(3);
+        pl.empilha(40);
+        pl.desempilha();
+        pl.empilha(11);
         pl.empilha(4);
+        pl.empilha(7);
         pl.desempilha();
         pl.desempilha();
+
+        System.out.printf("%d topo: ",pl.desempilha());
         // for(int i = 0; i < dados.length; i++){
         //     int num = sc.nextInt();
         //     if(pl.cheia()){
