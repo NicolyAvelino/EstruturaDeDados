@@ -12,8 +12,8 @@ public class ListaLigada{
         // 3 - atribui o endereço do novo No ao inicio da lista
         inicio = novo;
     }
-    public int removeInicio(){
-        int resp = -1;
+    public Aluno removeInicio(){
+        Aluno resp = -1;
         if(inicio == null){
             System.out.println("Erro! Lista vazia.");
         } else{
@@ -21,12 +21,11 @@ public class ListaLigada{
             // apaga o elemento
             inicio = inicio.prox;
         }
-
         return resp;
     }
 
     // adicionar um elemento no final
-    public void adicionaFinal(int e){
+    public void adicionaFinal(Aluno e){
         if(inicio == null){
             inicio = new No(e);
         } else {
@@ -39,8 +38,8 @@ public class ListaLigada{
     }
 
     // remover final
-    public int removeFinal(){
-        int r = -1;
+    public Aluno removeFinal(){
+        Aluno r = -1;
         if (inicio == null) {
             System.out.println("ERRO: Lista vazia");
         }else if(inicio.prox != null){
@@ -59,11 +58,11 @@ public class ListaLigada{
         return r;
     }
 
-    public String toString(){
+    public Aluno toString(){
         // criar um No auxiliar para percorrer a lista
         No aux = inicio;
         // declaro uma string que recebera os elementos da lista
-        String resp = "";
+        Aluno resp = "";
         // percorre a lista enquanto nao ultrapassar o ultimo No
         while(aux != null){
             // concatena o dado do No atual à String que será devolvida
