@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class Main{
     public static void main(String args[]){
         Arvore ar = new Arvore();
@@ -16,5 +17,15 @@ public class Main{
         ar.preOrdem(ar.getRaiz());
         System.out.println("Em Ordem");
         ar.preOrdem(ar.getRaiz());
+
+        ar.adicionaElemento(5);
+        ar.adicionaElemento(35);
+        ar.adicionaElemento(56);
+        ar.adicionaElemento(3);
+        ar.adicionaElemento(81);
+        ar.adicionaElemento(99);
+        ar.adicionaElemento(33);
+        System.out.println("Em Ordem inversa");
+		ar.emOrdem(ar.getRaiz());
     }
 }
